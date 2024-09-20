@@ -8,11 +8,15 @@ const Navbar = () => {
 
   return (
     <nav className='container'>
-      <img src='./src/assets/logo5.jpg' alt="Logo"  className='logo'/>
+      <a href="/"><img src='./src/assets/logo5.jpg' alt="Logo"  className='logo'/></a>
       <ul>
-        <li>Registrieren</li>
         <li>
-            <button className="fab" >Anmelden</button></li>
+          <a href="/Registrieren">Registrieren</a>
+        </li>
+        <li>
+          <a href="/Anmelden">
+            <button className="fab" >Anmelden</button> </a>  
+        </li>
       </ul>
     </nav>
   )

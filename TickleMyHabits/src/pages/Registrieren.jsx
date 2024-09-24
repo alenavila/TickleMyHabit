@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Register from '../Components/Registrieren/Register'
 
 const Registrieren = () => {
   return (
     <div>
-      <h1>Registrieren</h1>
+      <Register/>
     </div>
   )
 }
 
-export default Registrieren
+export default Registrieren;

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Login from '../Components/Anmelden/Login.jsx';
 
 const Anmelden = () => {
   return (
     <div>
-      <h1>Anmelden</h1>
+      <Login/>
     </div>
   )
 }

@@ -1,0 +1,29 @@
+/* Container für die Sidebar */
+.containerSidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Elemente beginnen oben */
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    border-right: 1px solid #ccc;
+    width: 350px;  /* Sidebar wird schmaler gemacht */
+    height: 100vh; /* Sidebar über die gesamte Bildschirmhöhe */
+    box-sizing: border-box;
+    position: fixed; /* Fixiert die Sidebar links */
+}
+
+/* Logo-Styling */
+.logoHauptseite {
+    display: flex;
+    justify-content: center; /* Zentriert das Logo horizontal */
+    margin-bottom: 20px; /* Abstand zwischen Logo und dem darunterliegenden Button */
+    margin-top: 180px;
+}
+
+.logoHauptseite img {
+    width: 220px;  /* Kleinere Bildgröße für das Logo */
+    height: auto;
+}
+
+

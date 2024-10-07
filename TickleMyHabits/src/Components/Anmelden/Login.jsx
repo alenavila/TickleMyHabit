@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navigate, Link } from 'react-router-dom';
-import { doSignInWithEmailAndPassword } from '../../firebase/auth'; // Gehe einen Ordner nach oben
+import { doSignInWithEmailAndPassword } from '../../firebase/auth'; 
 import { useAuth } from '../../contexts/authContext';
 import LogoLogIn from "../../assets/logo6.jpg";
 import '../../styles/Login.css';

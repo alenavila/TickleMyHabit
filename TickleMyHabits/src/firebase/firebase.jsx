@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth"
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
+// Firebase-Konfiguration mit Projekt-spezifischen Informationen
 const firebaseConfig = {
   apiKey: "AIzaSyDxaTJLZMzDcbWD5VMEcuGLTGa13KCTAro",
   authDomain: "ticklemyhabits.firebaseapp.com",
@@ -11,8 +13,14 @@ const firebaseConfig = {
   measurementId: "G-M92TYHK8BE"
 };
 
-
+// Firebase-App initialisieren
 const app = initializeApp(firebaseConfig);
+
+// Firebase-Authentifizierungsdienst initialisieren
 const auth = getAuth(app);
 
-export { app, auth }
+// Firebase Firestore-Datenbank initialisieren
+const db = getFirestore(app);
+
+// Exportieren der App, Authentifizierung und Datenbank zur Verwendung in anderen Modulen
+export { app, auth, db };

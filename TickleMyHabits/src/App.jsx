@@ -4,7 +4,8 @@ import Startseite from "./pages/Startseite";
 import Anmelden from "./pages/Anmelden";
 import Registrieren from "./pages/Registrieren";
 import Hauptseite from "./pages/Hauptseite"
-import { AuthProvider } from './contexts/authContext'; // AuthProvider importieren
+import { AuthProvider } from './contexts/authContext';
+
 
 function App() {
   return (

@@ -6,16 +6,20 @@ const Abmelden = () => {
     // Handler-Funktion für den Logout
     const handleLogout = async () => {
         try {
-            await doSignOut(); // Rufe die Abmeldefunktion auf
+            // Führt die Abmeldefunktion aus
+            await doSignOut();
             console.log("Erfolgreich abgemeldet!");
-            window.location.href = "/Anmelden"; // Umleitung zur Anmeldung
+            // Leitet den Benutzer nach der Abmeldung zur Anmeldeseite weiter
+            window.location.href = "/Anmelden";
         } catch (error) {
+            // Fehlerbehandlung bei Problemen während der Abmeldung
             console.error("Fehler beim Abmelden: ", error);
         }
     };
 
     return (
         <div className="bottom-button">
+            {/* Button zum Abmelden mit dem Logout-Handler */}
             <button onClick={handleLogout}>Abmelden</button>
         </div>
     );
